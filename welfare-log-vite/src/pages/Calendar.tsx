@@ -401,7 +401,7 @@ export default function Calendar() {
   };
 
   // 알림 스케줄링 함수
-  const scheduleNotificationForWorkShift = (dateStr: string, workType: WorkType) => {
+  const scheduleNotificationForWorkShift = (_dateStr: string, workType: WorkType) => {
     // 종일 근무는 알림 스케줄링하지 않음
     if (workType.isAllDay || !workType.startTime) {
       return;

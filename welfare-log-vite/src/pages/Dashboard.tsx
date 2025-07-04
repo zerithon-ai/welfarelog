@@ -53,8 +53,8 @@ interface Attendance {
 export default function Dashboard() {
   const [user, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
-  const [workShifts, setWorkShifts] = useState<WorkShift[]>([]);
-  const [attendances, setAttendances] = useState<Attendance[]>([]);
+  const [, setWorkShifts] = useState<WorkShift[]>([]);
+  const [, setAttendances] = useState<Attendance[]>([]);
   const [monthlyStats, setMonthlyStats] = useState({
     workDays: 0,
     totalHours: 0,
@@ -235,7 +235,7 @@ export default function Dashboard() {
   }
 
   const today = new Date();
-  const currentMonth = today.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long' });
+  // const currentMonth = today.toLocaleDateString('ko-KR', { year: 'numeric', month: 'long' });
 
   return (
     <div className="min-h-screen bg-gray-50 dark:bg-gray-900">

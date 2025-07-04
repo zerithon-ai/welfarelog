@@ -4,7 +4,7 @@ import { onAuthStateChanged } from 'firebase/auth';
 import { collection, addDoc, getDocs, doc, getDoc, updateDoc, deleteDoc } from 'firebase/firestore';
 import { auth, db } from '../lib/firebase';
 import Button from '../components/ui/Button';
-import { formatDate, formatTime } from '../lib/utils';
+import { formatTime } from '../lib/utils';
 
 // 인라인 타입 정의
 interface User {

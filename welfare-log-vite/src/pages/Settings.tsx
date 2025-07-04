@@ -20,7 +20,7 @@ interface User {
 }
 
 export default function Settings() {
-  const [user, setUser] = useState<User | null>(null);
+  const [, setUser] = useState<User | null>(null);
   const [loading, setLoading] = useState(true);
   const { isDarkMode, toggleTheme } = useTheme();
   const navigate = useNavigate();

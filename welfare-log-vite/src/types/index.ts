@@ -77,5 +77,3 @@ export interface PayrollCalculation {
   createdAt: Date;
 }
 
-// 명시적으로 다시 export
-export { User };
