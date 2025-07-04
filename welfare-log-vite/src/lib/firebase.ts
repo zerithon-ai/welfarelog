@@ -12,15 +12,10 @@ const firebaseConfig = {
   appId: import.meta.env.VITE_FIREBASE_APP_ID,
 };
 
-// 디버깅용 환경변수 확인
-console.log('Firebase Config Debug:', {
-  apiKey: import.meta.env.VITE_FIREBASE_API_KEY ? '✓ 설정됨' : '❌ 누락',
-  authDomain: import.meta.env.VITE_FIREBASE_AUTH_DOMAIN ? '✓ 설정됨' : '❌ 누락',
-  projectId: import.meta.env.VITE_FIREBASE_PROJECT_ID ? '✓ 설정됨' : '❌ 누락',
-  storageBucket: import.meta.env.VITE_FIREBASE_STORAGE_BUCKET ? '✓ 설정됨' : '❌ 누락',
-  messagingSenderId: import.meta.env.VITE_FIREBASE_MESSAGING_SENDER_ID ? '✓ 설정됨' : '❌ 누락',
-  appId: import.meta.env.VITE_FIREBASE_APP_ID ? '✓ 설정됨' : '❌ 누락',
-});
+// Firebase 설정 확인
+if (!import.meta.env.VITE_FIREBASE_API_KEY || !import.meta.env.VITE_FIREBASE_APP_ID) {
+  console.error('Firebase 설정이 완전하지 않습니다. .env.local 파일을 확인해주세요.');
+}
 
 const app = initializeApp(firebaseConfig);
 
