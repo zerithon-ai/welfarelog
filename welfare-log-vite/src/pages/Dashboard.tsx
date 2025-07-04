@@ -279,7 +279,7 @@ export default function Dashboard() {
                 </svg>
               </div>
               <div className="flex-1">
-                <p className="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">이번 달 근무일</p>
+                <p className="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">근무일</p>
                 <p className="text-2xl font-bold text-gray-900 dark:text-white mt-1">{monthlyStats.workDays}<span className="text-sm text-gray-500 dark:text-gray-400 ml-1">일</span></p>
               </div>
             </div>
@@ -294,8 +294,8 @@ export default function Dashboard() {
                 </svg>
               </div>
               <div className="flex-1">
-                <p className="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">총 근무시간</p>
-                <p className="text-2xl font-bold text-gray-900 dark:text-white mt-1">{monthlyStats.totalHours}<span className="text-sm text-gray-500 dark:text-gray-400 ml-1">시간</span></p>
+                <p className="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">근무시간</p>
+                <p className="text-2xl font-bold text-gray-900 dark:text-white mt-1">{monthlyStats.totalHours}<span className="text-sm text-gray-500 dark:text-gray-400 ml-1"></span></p>
               </div>
             </div>
           </div>
@@ -310,7 +310,7 @@ export default function Dashboard() {
               </div>
               <div className="flex-1">
                 <p className="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">시간외근무</p>
-                <p className="text-2xl font-bold text-gray-900 dark:text-white mt-1">{monthlyStats.overtimeHours}<span className="text-sm text-gray-500 dark:text-gray-400 ml-1">시간</span></p>
+                <p className="text-2xl font-bold text-gray-900 dark:text-white mt-1">{monthlyStats.overtimeHours}<span className="text-sm text-gray-500 dark:text-gray-400 ml-1"></span></p>
               </div>
             </div>
           </div>
@@ -325,7 +325,7 @@ export default function Dashboard() {
               </div>
               <div className="flex-1">
                 <p className="text-xs font-medium text-gray-500 dark:text-gray-400 uppercase tracking-wide">예상 급여</p>
-                <p className="text-lg font-bold text-gray-900 dark:text-white mt-1">{formatCurrency(monthlyStats.estimatedPay)}</p>
+                <p className="text-xs font-bold text-gray-900 dark:text-white mt-1">구현중.</p>
               </div>
             </div>
           </div>

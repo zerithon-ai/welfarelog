@@ -380,7 +380,6 @@ export default function Timesheet() {
 
       {/* 출퇴근 기록 */}
       <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md border border-gray-200 dark:border-gray-600 p-4">
-        <h1 className="text-sx font-semibold text-gray-900 dark:text-white mb-3">출퇴근 기록</h1>
         <div className="space-y-4">
           {/* 출근시간과 퇴근시간 나란히 배치 */}
           <div className="grid grid-cols-2 gap-3">
@@ -547,7 +546,7 @@ export default function Timesheet() {
                       <span className="text-gray-600 dark:text-gray-400">
                         {formatTime(attendance.checkInTime)}
                       </span>
-                      <span className="text-gray-400 dark:text-gray-500">→</span>
+                      <span className="text-gray-400 dark:text-gray-500">/</span>
                       <span className="text-gray-600 dark:text-gray-400">
                         {attendance.checkOutTime ? formatTime(attendance.checkOutTime) : '진행중'}
                       </span>

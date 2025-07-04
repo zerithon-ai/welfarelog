@@ -226,7 +226,7 @@ export default function Account() {
           <Button
             variant="outline"
             onClick={handleLogout}
-            className="text-red-600 border-red-300 hover:bg-red-50 dark:text-red-400 dark:border-red-700 dark:hover:bg-red-900/20"
+            className="text-red-600 border-red-300 text-xs hover:bg-red-50 dark:text-red-400 dark:border-red-700 dark:hover:bg-red-900/20"
           >
             로그아웃
           </Button>
@@ -392,22 +392,20 @@ export default function Account() {
       </div>
 
       {/* 위험 영역 */}
-      <div className="bg-white dark:bg-gray-800 rounded-lg shadow-md border border-red-200 dark:border-red-800 p-6">
         <div className="space-y-4">
           <div className="flex items-center justify-between p-4 bg-red-50 dark:bg-red-900/20 rounded-lg border border-red-200 dark:border-red-800">
             <div>
-              <h4 className="font-medium text-gray-900 dark:text-white">회원탈퇴</h4>
+              <h4 className="font-medium  text-gray-900 dark:text-white">회원탈퇴</h4>
               <p className="text-sm text-gray-600 dark:text-gray-400">계정과 모든 데이터를 영구적으로 삭제합니다</p>
             </div>
             <Button
               variant="outline"
               onClick={handleDeleteAccount}
-              className="text-red-600 border-red-300 hover:bg-red-50 dark:text-red-400 dark:border-red-700 dark:hover:bg-red-900/20"
+              className="text-red-600 w-[100px] text-xs border-red-300 hover:bg-red-50 dark:text-red-400 dark:border-red-700 dark:hover:bg-red-900/20"
             >
-              계정 삭제
+              계정삭제
             </Button>
           </div>
-        </div>
       </div>
     </div>
   );
