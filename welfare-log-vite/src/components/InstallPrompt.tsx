@@ -2,8 +2,17 @@ import { useState } from 'react';
 import { useInstallPrompt } from '../hooks/useInstallPrompt';
 
 export const InstallPrompt = () => {
-  const { canInstall, install } = useInstallPrompt();
+  const { canInstall, install, isInstallable, isInstalled } = useInstallPrompt();
   const [isVisible, setIsVisible] = useState(true);
+
+  // 디버깅 정보 출력
+  console.log('InstallPrompt Debug:', {
+    canInstall,
+    isInstallable,
+    isInstalled,
+    isVisible,
+    userAgent: navigator.userAgent
+  });
 
   if (!canInstall || !isVisible) {
     return null;
