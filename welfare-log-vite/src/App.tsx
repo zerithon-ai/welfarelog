@@ -4,6 +4,7 @@ import { ThemeProvider } from './contexts/ThemeContext'
 
 // Layout
 import MobileLayout from './components/ui/MobileLayout'
+import { InstallPrompt } from './components/InstallPrompt'
 
 // Pages
 import Dashboard from './pages/Dashboard'
@@ -64,6 +65,7 @@ function App() {
           <Route path="/license" element={<License />} />
           <Route path="*" element={<Navigate to="/dashboard" replace />} />
         </Routes>
+        <InstallPrompt />
       </MobileLayout>
     </ThemeProvider>
   )

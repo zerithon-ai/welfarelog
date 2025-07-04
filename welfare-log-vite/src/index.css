@@ -1,5 +1,21 @@
 @import "tailwindcss";
 
+/* 애니메이션 */
+@keyframes slide-up {
+  from {
+    transform: translateY(100%);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0);
+    opacity: 1;
+  }
+}
+
+.animate-slide-up {
+  animation: slide-up 0.3s ease-out;
+}
+
 /* 명시적 라이트/다크 모드 스타일 */
 
 /* 🌞 기본 모드 (라이트 모드) - 밝은 테마 */
